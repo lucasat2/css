@@ -1,0 +1,99 @@
+body {
+  background-color: black;
+}
+
+nav {
+  width: 800px;
+  margin: 0 auto;
+  padding-left: 150px;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  padding: 50px;
+  display: inline-block[];
+  margin-left: 0;
+  color: white
+}
+
+h1,
+h2,
+p {
+  color: white;
+}
+
+.icone-gps {
+  width: 40px;
+}
+
+.titulo-principal {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.wander {
+  text-align: center;
+}
+
+.explore-text {
+  display: block;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.images {
+  position: relative;
+  margin-left: 400px;
+}
+
+.images>img {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  margin: auto;
+  vertical-align: top;
+  padding-left: 10px;
+
+}
+
+.texto {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.images-journal {
+  margin-left: 500px;
+}
+
+.images-journal>img {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  margin: auto;
+  vertical-align: top;
+  padding-left: 50px;
+}
+
+footer {
+
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+footer>a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+}
