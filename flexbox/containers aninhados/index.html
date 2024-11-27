@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+
+    <div class="container-principal">
+
+      <div class="section">
+        <h2>Seção 1</h2>
+        <div class="container-aninhado">
+          <div class="item-aninhado">Item A</div>
+          <div class="item-aninhado">Item B</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Seção 2</h2>
+        <div class="container-aninhado">
+          <div class="item-aninhado">Item C</div>
+          <div class="item-aninhado">Item D</div>
+          <div class="item-aninhado">Item E</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Seção 3</h2>
+        <div class="container-aninhado">
+          <div class="item-aninhado">Item F</div>
+        </div>
+      </div>
+    </div>
+
+
+    <style>
+      .container-principal {
+        display: flex;
+        justify-content: space-between;
+        /* Distribui as seções igualmente */
+      }
+
+      .section {
+        flex: 1;
+        /* Cada seção ocupa o mesmo espaço */
+        margin: 10px;
+      }
+
+      .container-aninhado {
+        display: flex;
+        justify-content: center;
+        /* Centraliza os itens dentro do contêiner aninhado */
+      }
+
+      .item-aninhado {
+        padding: 10px;
+        background-color: lightblue;
+        margin: 5px;
+      }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+</html>

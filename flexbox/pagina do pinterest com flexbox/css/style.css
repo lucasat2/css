@@ -1,0 +1,101 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+.container-nav {
+  background-color: #222;
+  padding: 10px 0;
+}
+
+/* Navegação com Flexbox */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.icone-gps {
+  width: 40px;
+}
+
+/* Título principal */
+.titulo-principal {
+  margin-top: 150px;
+  font-size: 50px;
+}
+
+.wander {
+  margin-bottom: 30px;
+}
+
+/* Sessão Explore */
+.explore-text {
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+/* Imagens organizadas com Flexbox */
+.imagens,
+.images-journal {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px auto;
+}
+
+.imagens img,
+.images-journal img {
+  width: 20%;
+}
+
+.images-journal .estrada-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.estrada-content img,
+.estrada-content h3,
+.estrada-content p {
+  display: flex;
+  width: 200px;
+}
+
+
+.images-journal .estrada-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* Rodapé */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+  background-color: #111;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}

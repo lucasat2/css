@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* Estilos gerais */
+      body {
+        background-color: black;
+        color: white;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      h1,
+      h2,
+      p {
+        text-align: center;
+      }
+
+      .container-nav {
+        background-color: #222;
+        padding: 10px 0;
+      }
+
+      /* Navegação com Flexbox */
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+
+      .icone-gps {
+        width: 40px;
+      }
+
+      /* Título principal */
+      .titulo-principal {
+        margin-top: 150px;
+        font-size: 50px;
+      }
+
+      .wander {
+        margin-bottom: 30px;
+      }
+
+      /* Sessão Explore */
+      .explore-text {
+        max-width: 500px;
+        margin: 30px auto;
+      }
+
+      /* Imagens organizadas com Flexbox */
+      .imagens,
+      .images-journal {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 30px auto;
+        flex-wrap: wrap;
+        /* Permite que as imagens se movam para a próxima linha em telas menores */
+      }
+
+      .imagens img,
+      .images-journal img {
+        width: 20%;
+      }
+
+      .images-journal .estrada-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+
+      .estrada-content img,
+      .estrada-content h3,
+      .estrada-content p {
+        display: flex;
+        width: 200px;
+      }
+
+      /* Rodapé */
+      footer {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+        background-color: #111;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Media Queries para responsividade */
+
+      @media (max-width: 768px) {
+        .titulo-principal {
+          font-size: 36px;
+          margin-top: 100px;
+
+        }
+
+        nav a {
+          font-size: 16px;
+          padding: 10px;
+
+        }
+
+        .imagens img,
+        .images-journal img {
+          width: 45%;
+          /* Aumenta a largura das imagens para caber melhor em telas menores */
+          margin-bottom: 20px;
+          /* Adiciona espaço entre as imagens */
+        }
+
+        .estrada-content img,
+        .estrada-content h3,
+        .estrada-content p {
+          width: auto;
+          /* Permite que os elementos dentro de estrada-content se ajustem automaticamente */
+          text-align: center;
+          /* Centraliza o texto em telas menores */
+          margin-bottom: 10px;
+          /* Adiciona espaço entre os elementos */
+        }
+
+        footer {
+          flex-direction: column;
+          /* Muda a direção do rodapé para coluna em telas menores */
+          align-items: center;
+          /* Centraliza os itens do rodapé */
+          gap: 10px;
+          /* Adiciona espaço entre os itens do rodapé */
+        }
+
+        .explore-text p {
+          font-size: 14px;
+          /* Ajusta o tamanho da fonte do texto de exploração em telas menores */
+        }
+      }
+
+      @media (max-width: 480px) {
+        nav a {
+          font-size: 14px;
+          /* Reduz ainda mais o tamanho da fonte dos links de navegação para dispositivos muito pequenos */
+        }
+
+        .titulo-principal {
+          font-size: 28px;
+          /* Tamanho da fonte ainda menor para dispositivos pequenos */
+        }
+
+        .explore-text p {
+          font-size: 12px;
+          /* Ajusta o tamanho da fonte do texto de exploração em dispositivos muito pequenos */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Navegação -->
+    <div class="container-nav">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#explore">Explore</a>
+        <img class="icone-gps" src="images/icone-gps.png" alt="Icone GPS">
+        <a href="#contacts">Journal</a>
+        <a href="#search">Search</a>
+      </nav>
+    </div>
+
+    <!-- Título -->
+    <h1 class="titulo-principal">The Great Outdoors</h1>
+    <p class="wander">Wander often. Wonder always.</p>
+
+    <p style="text-align:center;">Ícone de vídeo aqui</p>
+
+    <!-- Sessão Explore -->
+    <h2>Explore the World</h2>
+    <section class="explore-text">
+      <p>We seek to provide the most authentic content for athletes adventurers explorers and travellers around the world. Our long term mission is to educate, inspire and enable all peoples to experience & protect wilderness</p>
+    </section>
+
+    <!-- Imagens principais -->
+    <div class="imagens">
+      <img src="images/sol.jpeg" alt="Por do Sol">
+      <img src="images/deserto.jpeg" alt="Deserto">
+      <img src="images/neve.jpeg" alt="Neve">
+    </div>
+
+    <!-- Sessão Journal -->
+    <h2>The Journal</h2>
+    <section class="explore-text">
+      <p>Our favorite stories about public lands and opportunities for you to get involved in protecting your outdoor experiences.</p>
+    </section>
+
+    <!-- Imagens do Journal -->
+    <!-- Estrada -->
+    <div class="images-journal">
+      <div class="estrada-content">
+        <img src="images/estrada.jpeg" alt="Estrada">
+        <h3>An unforgettable</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing e.</p>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+      <a href="#">Texto</a>
+      <a href="#">Texto</a>
+      <a href="#">Texto</a>
+      <a href="#">Texto</a>
+      <a href="#">Texto</a>
+    </footer>
+
+  </body>
+
+</html>
