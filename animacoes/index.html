@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformação 2D</title>
+    <style>
+
+
+
+      .meu-elemento {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        transform: translate(200px, 100px) rotate(120deg) scale(-2.5);
+        transition: transform 0.2s ease;
+        /* Transição suave */
+      }
+
+      .meu-elemento:hover {
+        transform: translate(100px, 100px) rotate(90deg) scale(2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="meu-elemento"></div>
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- O elemento .meu-elemento é um quadrado verde que será movido (translate), rotacionado (rotate) e escalado (scale).
+ 
+A transformação inicial aplica um deslocamento de 50 pixels para a direita e para baixo, uma rotação de 45 graus e aumenta seu tamanho em 50%.
+
+Ao passar o mouse sobre o elemento, ele se moverá para uma nova posição (100 pixels), será rotacionado para 90 graus e dobrará de tamanho (scale). -->
